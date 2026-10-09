@@ -13,7 +13,7 @@
   --font-urdu: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif; /* reserved for Urdu phase */
 }
 
-html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+html { overflow-x: clip; scroll-behavior: smooth; scroll-padding-top: 5rem; }
 body { background: var(--color-cream); color: var(--color-ink); font-family: var(--font-sans); }
 :lang(ur) { font-family: var(--font-urdu); line-height: 2; }
 
@@ -26,18 +26,8 @@ body::before {
 :focus-visible { outline: 3px solid var(--color-chili); outline-offset: 3px; }
 .on-dark :focus-visible { outline-color: var(--color-saffron); }
 
-/* Hero object: pure CSS plate. The [data-hero-slot] wrapper is where a canvas mounts in Phase 4. */
-.plate {
-  aspect-ratio: 1; border-radius: 9999px;
-  background:
-    radial-gradient(circle at 36% 35%, #7a9c46 0 7px, transparent 8px),
-    radial-gradient(circle at 63% 57%, #7a9c46 0 6px, transparent 7px),
-    radial-gradient(circle at 47% 67%, #7a9c46 0 5px, transparent 6px),
-    radial-gradient(circle, var(--color-saffron) 0 30%, #d97a1c 30% 32%, var(--color-chili) 32% 62%, var(--color-tamarind) 62% 64%, var(--color-cream) 64% 100%);
-  box-shadow: 0 30px 60px -20px rgb(0 0 0 / 0.6);
-}
 @media (prefers-reduced-motion: no-preference) {
-  .plate { animation: plate-in 900ms cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+  .hero-plate { animation: plate-in 900ms cubic-bezier(0.2, 0.8, 0.2, 1) both; }
   @keyframes plate-in { from { transform: scale(0.88) rotate(-10deg); opacity: 0; } }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

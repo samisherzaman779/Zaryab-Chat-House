@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Zaryab Chat House logo</title>
+  <desc id="desc">Transparent vector logo with a steaming chaat bowl and gold-orange gradient lettering.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#FFF2A8"/>
+      <stop offset=".28" stop-color="#FFC928"/>
+      <stop offset=".62" stop-color="#FF9D13"/>
+      <stop offset="1" stop-color="#C84A0B"/>
+    </linearGradient>
+    <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF5D9"/>
+      <stop offset="1" stop-color="#E8CFA0"/>
+    </linearGradient>
+    <linearGradient id="bowl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#743016"/>
+      <stop offset=".48" stop-color="#35150F"/>
+      <stop offset="1" stop-color="#160A08"/>
+    </linearGradient>
+    <linearGradient id="chickpea" x1="0" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#FFD66A"/>
+      <stop offset=".55" stop-color="#F7A51D"/>
+      <stop offset="1" stop-color="#B95A12"/>
+    </linearGradient>
+    <linearGradient id="onion" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD5F0"/>
+      <stop offset="1" stop-color="#C75D9D"/>
+    </linearGradient>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- open circular frame -->
+    <path d="M245 390 A355 355 0 0 1 955 390" fill="none" stroke="url(#gold)" stroke-width="20"/>
+    <path d="M380 790 Q600 900 820 790" fill="none" stroke="url(#gold)" stroke-width="17"/>
+    <!-- steam -->
+    <path d="M515 190 C465 140 535 112 518 58 M595 198 C550 135 632 104 602 35 M675 190 C650 150 714 125 692 78"
+          fill="none" stroke="url(#gold)" stroke-width="27"/>
+    <!-- bowl body -->
+    <path d="M285 355 Q600 425 915 355 L855 465 Q600 600 345 465 Z" fill="url(#bowl)" stroke="url(#cream)" stroke-width="12"/>
+    <ellipse cx="600" cy="354" rx="315" ry="91" fill="url(#cream)" stroke="url(#gold)" stroke-width="12"/>
+    <ellipse cx="600" cy="350" rx="278" ry="66" fill="#4A2112"/>
+    <!-- chickpeas -->
+    <g fill="url(#chickpea)" stroke="#A84C0A" stroke-width="3">
+      <circle cx="380" cy="347" r="25"/><circle cx="420" cy="318" r="24"/><circle cx="458" cy="360" r="27"/>
+      <circle cx="493" cy="310" r="25"/><circle cx="530" cy="347" r="27"/><circle cx="565" cy="300" r="25"/>
+      <circle cx="606" cy="340" r="27"/><circle cx="645" cy="305" r="24"/><circle cx="682" cy="347" r="26"/>
+      <circle cx="720" cy="315" r="25"/><circle cx="759" cy="350" r="27"/><circle cx="800" cy="333" r="23"/>
+      <circle cx="448" cy="385" r="22"/><circle cx="515" cy="383" r="23"/><circle cx="580" cy="382" r="22"/>
+      <circle cx="650" cy="383" r="23"/><circle cx="716" cy="383" r="22"/>
+    </g>
+    <!-- chickpea highlights -->
+    <g fill="#FFF0A0" opacity=".9">
+      <ellipse cx="414" cy="310" rx="8" ry="5"/><ellipse cx="489" cy="302" rx="8" ry="5"/>
+      <ellipse cx="561" cy="292" rx="8" ry="5"/><ellipse cx="641" cy="297" rx="8" ry="5"/>
+      <ellipse cx="715" cy="307" rx="8" ry="5"/><ellipse cx="753" cy="342" rx="8" ry="5"/>
+    </g>
+    <!-- yogurt and onion garnish -->
+    <path d="M485 327 Q525 280 567 329 T655 327 Q680 353 647 363 Q590 376 552 347 Q522 332 485 327Z" fill="#FFF0D3" opacity=".96"/>
+    <path d="M510 305 Q545 351 586 309 Q622 278 656 319 M548 326 Q584 368 625 329"
+          fill="none" stroke="url(#onion)" stroke-width="16"/>
+    <!-- herb sprigs -->
+    <g fill="#4E8A36" stroke="#2E5D27" stroke-width="2">
+      <ellipse cx="610" cy="314" rx="12" ry="28" transform="rotate(-25 610 314)"/>
+      <ellipse cx="588" cy="318" rx="11" ry="25" transform="rotate(-55 588 318)"/>
+      <ellipse cx="627" cy="318" rx="11" ry="25" transform="rotate(45 627 318)"/>
+      <ellipse cx="606" cy="296" rx="11" ry="24"/>
+      <ellipse cx="642" cy="337" rx="10" ry="22" transform="rotate(55 642 337)"/>
+    </g>
+    <!-- wordmark -->
+    <text x="600" y="665" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="150" letter-spacing="-5" fill="url(#cream)" stroke="#5B260E" stroke-width="3" paint-order="stroke">Zaryab</text>
+    <path d="M250 716 H355 M845 716 H950" stroke="url(#gold)" stroke-width="10"/>
+    <text x="600" y="745" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="57" letter-spacing="1.5" fill="url(#gold)">Chat House</text>
+  </g>
+</svg>

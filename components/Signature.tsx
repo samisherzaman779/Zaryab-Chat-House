@@ -13,7 +13,7 @@ export function Signature() {
   return (
     <section id="signature" className="mx-auto w-full max-w-6xl px-5 py-20 md:px-8 md:py-32">
       <RevealHeading className="max-w-2xl font-display text-4xl font-extrabold leading-tight tracking-tight md:text-7xl">
-        What we serve on Van Street
+        Our plates on Van Street
       </RevealHeading>
       <ul className="mt-14 grid gap-14 md:grid-cols-12 md:gap-x-8 md:gap-y-16">
         {featured.map((item, i) => {

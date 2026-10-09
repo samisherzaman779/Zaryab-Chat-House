@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="Zaryab Chat House">
+  <rect width="180" height="180" rx="40" fill="#2a1410"/>
+  <circle cx="90" cy="90" r="56" fill="#f0a32b"/>
+  <circle cx="90" cy="90" r="36" fill="#b3261e"/>
+  <text x="90" y="104" text-anchor="middle" font-family="system-ui,sans-serif" font-size="52" font-weight="800" fill="#f3e6cc">Z</text>
+</svg>

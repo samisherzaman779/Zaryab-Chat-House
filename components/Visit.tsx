@@ -2,6 +2,7 @@ import { Navigation, Phone } from "lucide-react";
 import { addressLine, business, directionsHref, telHref } from "@/data/business";
 import { Button } from "./Button";
 import { ComingSoon } from "./ComingSoon";
+import { SocialLinks } from "./SocialLinks";
 
 export function Visit() {
   const { hours, phone, address } = business;
@@ -10,8 +11,11 @@ export function Visit() {
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-20 md:grid-cols-2 md:px-8 md:py-28">
         <div>
           <h2 className="font-display text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
-            Find us at Empress Market
+            Find Zaryab Chat House at Empress Market
           </h2>
+          <p className="mt-4 max-w-lg text-lg text-ink/75">
+            Late-night chaat on Van Street in Saddar—open 11&nbsp;PM to 1&nbsp;AM daily. Get directions on Google Maps.
+          </p>
           <address className="mt-6 text-2xl not-italic leading-snug">
             {business.name}<br />
             {address.street}<br />
@@ -46,6 +50,12 @@ export function Visit() {
           <div>
             <dt className="text-sm font-semibold text-ink/70">Address</dt>
             <dd className="mt-1 text-xl">{addressLine}</dd>
+          </div>
+          <div>
+            <dt className="text-sm font-semibold text-ink/70">Social</dt>
+            <dd className="mt-1">
+              <SocialLinks theme="light" />
+            </dd>
           </div>
         </dl>
       </div>

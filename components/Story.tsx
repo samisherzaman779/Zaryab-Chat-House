@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { story } from "@/data/story";
 import { ComingSoon } from "./ComingSoon";
 import { Parallax, Reveal, RevealHeading } from "./motion/Reveal";
@@ -30,10 +31,16 @@ export function Story() {
           </dl>
         </div>
         <Parallax className="mx-auto w-full max-w-xs md:max-w-sm">
-          {/* Concentric market arches: decorative until real storefront photography exists. */}
-          <div aria-hidden className="rounded-t-full bg-tamarind p-4">
-            <div className="rounded-t-full bg-chili p-4">
-              <div className="stripes aspect-[3/4] rounded-t-full bg-saffron" />
+          <div className="rounded-t-full bg-tamarind p-4">
+            <div className="overflow-hidden rounded-t-full bg-chili p-4">
+              <Image
+                src="/images/chat-owner-man.png"
+                alt="Fresh chickpeas, onions and chutneys prepared at the stall"
+                width={199}
+                height={154}
+                sizes="(min-width: 768px) 20rem, 75vw"
+                className="aspect-[3/4] w-full rounded-t-full object-cover"
+              />
             </div>
           </div>
         </Parallax>

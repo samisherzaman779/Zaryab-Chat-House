@@ -1,22 +1,7 @@
-import { addressLine, business, siteUrl } from "@/data/business";
+import { structuredDataGraph } from "@/lib/structured-data";
 
-// Only verified facts: no hours, rating, reviews or social profiles until confirmed.
 export function JsonLd() {
-  const data = {
-    "@context": "https://schema.org",
-    "@type": "FoodEstablishment",
-    name: business.name,
-    url: siteUrl,
-    description: `Chaat, pani puri and kathiyawari chana piyala at ${addressLine}.`,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: business.address.street,
-      addressLocality: business.address.city,
-      addressRegion: business.address.region,
-      addressCountry: business.address.countryCode,
-    },
-    ...(business.phone.status === "verified" && { telephone: business.phone.value.e164 }),
-  };
+  const data = structuredDataGraph();
   return (
     <script
       type="application/ld+json"

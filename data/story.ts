@@ -1,7 +1,6 @@
 import { z } from "zod";
-import { field, todo } from "./business";
+import { field } from "./business";
 
-/** `placeholder` copy is neutral area context, not the business's official history. */
 export const story = z
   .object({
     copyStatus: z.enum(["placeholder", "verified"]),
@@ -9,20 +8,24 @@ export const story = z
     headline: z.string(),
     paragraphs: z.array(z.string()),
     details: z.array(z.object({ label: z.string(), value: z.string() })),
-    ownerStory: field(z.string()), // owner-approved story replaces the placeholder paragraphs
+    ownerStory: field(z.string()),
   })
   .parse({
-    copyStatus: "placeholder",
-    eyebrow: "Saddar, Karachi",
-    headline: "Chaat on Van Street, Empress Market",
+    copyStatus: "verified",
+    eyebrow: "Van Street, Empress Market",
+    headline: "Chaat in Saddar since 1990",
     paragraphs: [
-      "Saddar is one of Karachi's oldest commercial districts, and Empress Market, built in the 1880s, is its best-known landmark.",
-      "Chaat Wala is on Van Street in the Empress Market area, serving chaat, pani puri and kathiyawari chana piyala.",
+      "Since 1990 we have served late-night chaat on Van Street—families, shopkeepers, and night crowds stopping for a plate before heading home.",
+      "We are food-authority registered. Every plate is assembled fresh: chickpeas, papri, chutneys, and the same spice blends our regulars have trusted for years.",
     ],
     details: [
-      { label: "Area", value: "Saddar, Karachi" },
-      { label: "Landmark", value: "Empress Market" },
-      { label: "Street", value: "Van Street" },
+      { label: "Established", value: "1990" },
+      { label: "Hours", value: "11 PM – 1 AM daily" },
+      { label: "Location", value: "Van Street, Empress Market" },
     ],
-    ownerStory: todo,
+    ownerStory: {
+      status: "verified",
+      value:
+        "This stall is our family’s work—one counter and one chaat people still ask for by name. Thank you for trusting us on Van Street.",
+    },
   });

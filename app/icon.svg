@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Zaryab Chat House favicon</title>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF0A0"/><stop offset=".45" stop-color="#FFBA20"/><stop offset="1" stop-color="#E65B0A"/>
+    </linearGradient>
+    <linearGradient id="bowl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#783116"/><stop offset="1" stop-color="#1D0B08"/>
+    </linearGradient>
+    <linearGradient id="chickpea" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE17B"/><stop offset="1" stop-color="#E88910"/>
+    </linearGradient>
+  </defs>
+  <!-- no background: transparent canvas -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M111 260 A145 145 0 0 1 401 260" fill="none" stroke="url(#gold)" stroke-width="14"/>
+    <path d="M220 130 C188 98 235 78 224 45 M260 132 C232 98 278 75 263 35 M299 130 C282 106 318 91 308 64"
+      fill="none" stroke="url(#gold)" stroke-width="17"/>
+    <path d="M115 252 Q256 293 397 252 L369 326 Q256 396 143 326 Z" fill="url(#bowl)" stroke="#FFF0C9" stroke-width="8"/>
+    <ellipse cx="256" cy="252" rx="142" ry="43" fill="#FFF0C9" stroke="url(#gold)" stroke-width="7"/>
+    <ellipse cx="256" cy="250" rx="122" ry="30" fill="#512312"/>
+    <g fill="url(#chickpea)" stroke="#A64A0A" stroke-width="2">
+      <circle cx="164" cy="247" r="14"/><circle cx="188" cy="230" r="15"/><circle cx="211" cy="255" r="15"/>
+      <circle cx="231" cy="229" r="14"/><circle cx="254" cy="250" r="16"/><circle cx="278" cy="229" r="14"/>
+      <circle cx="301" cy="253" r="15"/><circle cx="324" cy="232" r="14"/><circle cx="348" cy="248" r="14"/>
+      <circle cx="194" cy="268" r="13"/><circle cx="233" cy="269" r="13"/><circle cx="278" cy="269" r="13"/><circle cx="318" cy="268" r="13"/>
+    </g>
+    <path d="M205 237 Q230 211 253 239 T303 237" fill="none" stroke="#FFF1D5" stroke-width="10"/>
+    <path d="M222 225 Q241 255 261 226 T298 229" fill="none" stroke="#D56DA8" stroke-width="9"/>
+    <g fill="#4F8A35">
+      <ellipse cx="267" cy="226" rx="7" ry="17" transform="rotate(-25 267 226)"/>
+      <ellipse cx="254" cy="229" rx="7" ry="16" transform="rotate(-55 254 229)"/>
+      <ellipse cx="278" cy="230" rx="7" ry="16" transform="rotate(50 278 230)"/>
+      <ellipse cx="266" cy="214" rx="7" ry="15"/>
+    </g>
+    <path d="M161 352 Q256 405 351 352" fill="none" stroke="url(#gold)" stroke-width="10"/>
+  </g>
+</svg>
