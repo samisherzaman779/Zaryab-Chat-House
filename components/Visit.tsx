@@ -34,7 +34,7 @@ export function Visit() {
         </div>
         <dl className="grid content-start gap-6 md:pt-3">
           <div>
-            <dt className="text-sm font-semibold text-ink/70">Phone</dt>
+            <dt className="text-sm font-bold text-ink/70">Phone</dt>
             <dd className="mt-1 text-xl">
               {phone.status === "verified" ? (
                 <a href={telHref ?? undefined} className="underline decoration-chili decoration-2 underline-offset-4">
@@ -44,15 +44,15 @@ export function Visit() {
             </dd>
           </div>
           <div>
-            <dt className="text-sm font-semibold text-ink/70">Hours</dt>
+            <dt className="text-sm font-bold text-ink/70">Hours</dt>
             <dd className="mt-1 text-xl">{hours.status === "verified" ? hours.value : <ComingSoon />}</dd>
           </div>
           <div>
-            <dt className="text-sm font-semibold text-ink/70">Address</dt>
+            <dt className="text-sm font-bold text-ink/70">Address</dt>
             <dd className="mt-1 text-xl">{addressLine}</dd>
           </div>
           <div>
-            <dt className="text-sm font-semibold text-ink/70">Social</dt>
+            <dt className="text-sm font-bold text-ink/70">Social</dt>
             <dd className="mt-1">
               <SocialLinks theme="light" />
             </dd>

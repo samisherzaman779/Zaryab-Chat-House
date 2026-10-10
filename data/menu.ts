@@ -21,24 +21,24 @@ export type MenuItem = z.infer<typeof item>;
 const verified = <T>(value: T) => ({ status: "verified" as const, value });
 
 const plate1Photo = verified({
-  src: "/images/chaat-plate1.png",
+  src: "/images/single-plate.png",
   alt: "Single plate of chana chaat with papri and onion",
   width: 204,
-  height: 204,
+  height: 316,
 });
 
 const plate2Photo = verified({
-  src: "/images/chaat-plate5.png",
+  src: "/images/double-plate.png",
   alt: "Double plate of papri chaat with chickpeas and masala",
   width: 373,
   height: 257,
 });
 
 const plate3Photo = verified({
-  src: "/images/chaat-plate2.png",
+  src: "/images/special-plate.png",
   alt: "Special plate of chaat with chutneys and toppings",
-  width: 276,
-  height: 316,
+  width: 316,
+  height: 373,
 });
 
 export const menuItems = z.array(item).parse([

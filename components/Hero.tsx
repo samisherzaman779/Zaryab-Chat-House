@@ -5,10 +5,10 @@ import { business, directionsHref, telHref } from "@/data/business";
 import { Button } from "./Button";
 
 const heroPhoto = {
-  src: "/images/chaat-plate2.png",
+  src: "/images/special-plate.png",
   alt: "Fresh chaat plate with chickpeas, crispy papri and chutneys at Van Street, Empress Market, Karachi",
-  width: 800,
-  height: 800,
+  width: 400,
+  height: 400,
 };
 
 export function Hero() {

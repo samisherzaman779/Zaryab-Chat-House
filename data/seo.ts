@@ -1,8 +1,8 @@
 /** Central SEO config — update `NEXT_PUBLIC_SITE_URL` when the live domain is ready. */
-export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com").replace(/\/$/, "");
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://zaryab-chat-house.vercel.app").replace(/\/$/, "");
 
 const isPlaceholderSite =
-  siteUrl.includes("example.com") || siteUrl.includes("localhost") || siteUrl.includes("127.0.0.1");
+  siteUrl.includes("zaryab-chat-house.vercel.app") || siteUrl.includes("localhost") || siteUrl.includes("127.0.0.1");
 
 /** True only on real production deploys with a live domain. */
 export const allowIndexing =
