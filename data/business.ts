@@ -64,7 +64,7 @@ export const business = schema.parse({
   name: "Zaryab Chat House",
 
   address: {
-    street: "Van Street, Empress Market",
+    street: "Van Street, Rainbow Centre",
     area: "Saddar",
     city: "Karachi",
     region: "Sindh",

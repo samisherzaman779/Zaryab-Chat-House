@@ -6,7 +6,7 @@ import { Button } from "./Button";
 
 const heroPhoto = {
   src: "/images/special-plate.png",
-  alt: "Fresh chaat plate with chickpeas, crispy papri and chutneys at Van Street, Empress Market, Karachi",
+  alt: "Fresh chaat plate with chickpeas, crispy papri and chutneys at Van Street, Rainbow Centre, Karachi",
   width: 400,
   height: 400,
 };
@@ -34,7 +34,7 @@ export function Hero() {
           <div className="mb-6 flex flex-wrap items-center justify-center gap-2.5 md:justify-start">
             <span className="inline-flex items-center gap-2 rounded-full border border-saffron/30 bg-saffron/10 px-4 py-2 text-xs font-semibold tracking-wide text-saffron sm:text-sm">
               <MapPin size={15} aria-hidden="true" />
-              Saddar, Empress Market, Karachi
+              Saddar, Rainbow Centre, Karachi
             </span>
 
             <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-medium text-cream/80">
@@ -63,7 +63,7 @@ export function Hero() {
 
           <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-cream/80 sm:text-lg sm:leading-8 md:mx-0 md:text-xl">
             Your late-night chaat craving starts here. Enjoy delicious
-            single, double, and special plates on Van Street, Empress
+            single, double, and special plates on Van Street, Rainbow Centre
             Market — serving Karachi since 1990.
           </p>
 

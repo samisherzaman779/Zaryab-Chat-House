@@ -12,7 +12,7 @@ export const story = z
   })
   .parse({
     copyStatus: "verified",
-    eyebrow: "Van Street, Empress Market",
+    eyebrow: "Van Street, Rainbow Centre",
     headline: "Chaat in Saddar since 1990",
     paragraphs: [
       "Since 1990 we have served late-night chaat on Van Street—families, shopkeepers, and night crowds stopping for a plate before heading home.",
@@ -21,7 +21,7 @@ export const story = z
     details: [
       { label: "Established", value: "1990" },
       { label: "Hours", value: "11 PM – 1 AM daily" },
-      { label: "Location", value: "Van Street, Empress Market" },
+      { label: "Location", value: "Van Street, Rainbow Centre" },
     ],
     ownerStory: {
       status: "verified",
